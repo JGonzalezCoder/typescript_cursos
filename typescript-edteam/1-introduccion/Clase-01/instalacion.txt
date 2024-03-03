@@ -1,0 +1,16 @@
+Paso 1: Crear el archivo package.json
+	yarn init -y
+
+Paso 2: instalar typescript
+	yarn add typescript 
+	NOTA: para este curso se usara el siguiente comando
+	yarn add typescript ts-node
+
+Paso 3: Crear el archivo TSConfig.json
+	yarn tsc --init
+
+Paso 4: Configurar el archivo TSConfig.json
+	outDir: "./dist",
+
+OPCIONAL: compilar archivos typescript a javscript
+	yarn tsc

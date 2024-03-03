@@ -1,0 +1,21 @@
+Compilacion:
+
+	npx tsc nombre_archivo.ts
+
+Compilacion a una version especifica:
+
+	npx tsc nombre_archivo.ts --target es6
+
+Compilacion a una version especifica y enviado a una carpeta:
+
+	npx tsc nombre_archivo.ts --target es6 --outDir carpeta_destino
+
+Compilacion a todos los aarchivos typescript a una version especifica y enviado a una carpeta:
+
+	npx tsc *.ts --target es6 --outDir carpeta_destino
+
+Compilacion despues de configurar TSConfig.json
+
+npx tsc
+
+npx tsc --watch

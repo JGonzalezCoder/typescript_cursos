@@ -1,0 +1,16 @@
+example = null;				-> null
+example = 'string';			-> string
+example = 3.14;				-> number
+example = true;				-> boolean
+example = undefined;		-> undefined
+example = [];				-> array
+example = Symbol("abc");	-> Symbol
+
+example = {					-> Objs
+	name : 'Nicolas',
+	lastName : 'Molina'
+}
+
+example = function (a) {	-> functions
+	return a;
+}

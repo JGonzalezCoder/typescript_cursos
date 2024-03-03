@@ -1,0 +1,72 @@
+Paso 1: Creamos una carpeta para nuestro proyect (el nombre que desees) e ingresamos a la misma.
+Mediante la terminal ser[ia lo siguiente:
+
+	mkidir nombre-del-proyecto
+	cd nombre-del-proyecto
+
+Paso 2: Abrimos nuestro editor de c[odigo desde la ubicaci[on de la carpeta del proyecto.
+
+	code.
+	
+Paso 3: Creamos los siguientes archivos
+
+	.gitignore : en el editor o desde la terminal. Para su contenido podemos utlizar la p[agina gitignore.io
+	En nuestro programa necesitamos las siguientes especificaciones:
+	
+	#Windows #macOS #Linux #Node
+	
+	luego lo copiamos lo que nos genera la web y
+	lo pegamos en nuestro gitignore desde nuestro editor de codigo.
+	
+	.editorconfig (opcional) : si estas usando VSC, con el fin de dar una configuraci[on simple y sencilla
+	a la hora de jecturar codigo. Aqui copia y pega lo siguiente:
+	
+# Editor configuration, see https://editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.ts]
+quote_type = single
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false
+	
+	debes tener instalado la siguiente extension en VSC: EditorConfig for VS Code
+	
+Paso 4: necesitamos tener creado una carpeta de nombre src dentro de nuestro proyecto
+	
+Paso 5: Ahora crearemos nuestro archivo package.json
+	de manera simpledesde la terminal y dentro de la ruta del proyecto:
+	
+	npm init -y
+	
+Paso 6: Finalemnte, instalemos TypeScript. Desde la terminal y dentro de la ruta del proyecto, ejecuta:
+
+	npm install typescript --save-dev
+
+Paso 7: Para verificar la version instalada
+
+	npx tsc --version
+
+Paso 8: Creando un archivo TSConfig.json
+
+	npx tsc --init
+	
+Paso 9: configuramos los siguientes archivos
+
+	outDir: indicamos la carpeta dist como el directorio destino de los archivos transpilados
+	
+		"outDir": "./dist",
+		
+	rootDir: indicamos que nuestros archivos Typescript, los cuales seran "compilados"
+	luego, estaran en la carpeta src
+	
+		"rootDir": "./src",
+
