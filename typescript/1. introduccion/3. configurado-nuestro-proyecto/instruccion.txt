@@ -4,13 +4,13 @@ Mediante la terminal ser[ia lo siguiente:
 	mkidir nombre-del-proyecto
 	cd nombre-del-proyecto
 
-Paso 2: Abrimos nuestro editor de c[odigo desde la ubicaci[on de la carpeta del proyecto.
+Paso 2: Abrimos nuestro editor de c[odigo desde la ubicacion de la carpeta del proyecto.
 
 	code.
 	
 Paso 3: Creamos los siguientes archivos
 
-	.gitignore : en el editor o desde la terminal. Para su contenido podemos utlizar la p[agina gitignore.io
+	.gitignore : en el editor o desde la terminal. Para su contenido podemos utlizar la pagina gitignore.io
 	En nuestro programa necesitamos las siguientes especificaciones:
 	
 	#Windows #macOS #Linux #Node
@@ -18,8 +18,8 @@ Paso 3: Creamos los siguientes archivos
 	luego lo copiamos lo que nos genera la web y
 	lo pegamos en nuestro gitignore desde nuestro editor de codigo.
 	
-	.editorconfig (opcional) : si estas usando VSC, con el fin de dar una configuraci[on simple y sencilla
-	a la hora de jecturar codigo. Aqui copia y pega lo siguiente:
+	.editorconfig (opcional) : si estas usando VSC, con el fin de dar una configuracion simple y sencilla
+	a la hora de ejecturar codigo. Aqui copia y pega lo siguiente:
 	
 # Editor configuration, see https://editorconfig.org
 root = true
