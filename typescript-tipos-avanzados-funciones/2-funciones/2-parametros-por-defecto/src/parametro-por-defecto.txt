@@ -1,0 +1,21 @@
+PARAMETRO POR DEFECTO:
+
+	Se usan para predefinir valores a los parametros de una funcion en caso de no especificar un valor al invocarla.
+
+PARAMETRO POR DEFECTO EN TYPESCRIPT:
+
+cons createProduct = (
+	id: string | number,
+	isNew: boolean = true,
+	stock: number = 10
+) => {
+	return {
+		id,
+		stock,
+		isNew
+	}
+}
+
+console.log(createProduct(1));
+
+NOTA: podemos usar esto como alternativa al nullish-coalescing.

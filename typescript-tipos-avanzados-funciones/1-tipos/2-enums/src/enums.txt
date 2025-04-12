@@ -1,0 +1,22 @@
+Enums
+	
+	Es un tipo de dato que nos permite crear un set de opciones. Estas opciones son almacenadas bajo una estructura llave-valor similar a un objeto.
+
+//ENUM
+enum ROLES{
+	ADMIN = "admin",
+	SELLER = "seller",
+	CUSTOMER = "customer",
+}
+
+//TIPO DE DATO USER
+type User = {
+	username: string;
+	role: ROLES;
+}
+
+//CONSTANTE
+const person: User = {
+	username: "jesus",
+	role: ROLES.ADMIN
+}

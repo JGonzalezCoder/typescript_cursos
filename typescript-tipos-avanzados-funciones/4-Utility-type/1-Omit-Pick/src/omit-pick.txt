@@ -1,0 +1,34 @@
+Omit y Pick
+
+	Son utility types que te permite crear un nuevo tipo basado en un tipo existente, pero omitiendo o sleccionando algunas de las propeidades de tipo original.
+
+OMIT:
+
+	para omitir ciertas propiedades de la interfaz user
+interface User{
+	id: number;
+	name: string;
+	email: string;
+	phoneNumber: string;
+}
+
+type UserWithoutContact = Omit<User, "email" | "phoneNumber">;
+
+let user: UserWithoutContact = {
+	id: 1,
+	name: "Jesus Gonzalez",
+}
+
+console.log(user);
+
+PICK:
+
+	para seleccionar ciertas propiedades de user
+type UserContactinfo = Pick<User, "email" | "phoneNunmber">
+
+let contactinfo: UserContactinfo = {
+	email: "jesus@gmail.com",
+	phoneNumber: "04249085477",
+}
+
+console.log(contactinfo);

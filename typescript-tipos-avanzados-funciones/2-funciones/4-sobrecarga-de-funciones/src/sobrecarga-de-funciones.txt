@@ -1,0 +1,31 @@
+PROBLEMA:
+
+	Cuando el tipado del retorno de una funcion puede ser mas de un tipo de dato, TypeScript en primera instancia no permite utilizar los metodos propios de un tipo de datos especifico a menos que se realice una validacion de tipos previos.
+
+SOBRECARGA DE FUNCIONES
+
+	- Definimos diferentes firmas de una funcion en la que cada firma puede manejar cierto tipado de entrada y salida.
+	- Typescript decidira de manera automatica que firma es la correcta para usar basandose en los argumentos enviados y el tipo de datos de estos.
+
+EJERCICIO:
+
+	1- Si le enviamos un array, nos debe unir cada elemento del array y devolver un string.
+	2- Si le enviamos un string, nos debe separar cada caracter y formar un array como repuesta.
+	[N,i,c,o] => "Nico"... string[] => string
+	"Nico" => [N,i,c,o]... string => string[]
+
+function parseStr(input: string): string[]
+function parseStr(input: string[]): string
+function parseStr(input: unknown): unknown {
+	if(Array.isArray(input)){
+		return input.join("")
+	}else{
+		return input.split("")
+	}
+}
+const rtaArray = parseStr("Nico")
+rtaArray.reverse()
+console.log("rtaArray","Nico =>",rtaArray)
+const rtaStr = parseStr(["N","I","C","O"])
+rtaStr.toLowerCase()
+console.log("rtaStr","['N','I','C','O'] =>",rtaStr)

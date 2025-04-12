@@ -1,0 +1,18 @@
+UNKNOWN
+
+	Nos indica que una variable es de un tipo de datoo desconocido. Nos fuerza a hacer una verificacion de tipo.
+	
+	let unknownVar: unknown;
+
+UNKNOWN vs Any
+
+	let unknownVar: unknown;
+	if(unknownVar === "string"){
+		unknownVar.toUpperCase();
+	}
+
+FUNCIONES
+
+	const parse = (str: string): unknown => {
+		return JSON.parse(str);
+	}

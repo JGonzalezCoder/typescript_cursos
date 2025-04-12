@@ -1,0 +1,14 @@
+ACCEDER AL TIPADO POR INDICE:
+
+	Acceder al tipado por indice se hace de una manera muy similar a la cual accedemos a valores en arrays dentro de Javascript, pero en este caso, aplicado a una interface, enum, entr otros, para acceder al tipo de dato de una propiedad y que dicho tipado sea asignado en otra parte del codigo.
+
+interface Human {
+	id: string;
+	name: string;
+	age: number;
+	isAlien: boolean;
+}
+
+function createHuman(name: Human["name"]) {
+	//code
+}

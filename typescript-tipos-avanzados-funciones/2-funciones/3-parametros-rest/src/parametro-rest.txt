@@ -1,0 +1,24 @@
+PARAMETRO REST:
+
+	- Nos permiten enviar la cantidad de parametros que queramos a una funcion.
+	- Se denota con "..." seguido del nombre con el cual identificaremos a estos parametros.
+	
+const sum = (...args) => {
+	const suma = args.reduce((acumulador,num) => acumulador + num,0)
+	return suma
+}
+
+consolo.log(sum(1,2))
+consolo.log(sum(1,2,3,4,5))
+consolo.log(sum(1,2,3,4,5,6,7,8,9,10))
+
+PARAMETROS REST EN TYPESCRIPT:
+
+const sum = (...args: number[]) => {
+	const suma = args.reduce((acumulador,num) => acumulador + num,0)
+	return suma
+}
+
+consolo.log(sum(1,2))
+consolo.log(sum(1,2,3,4,5))
+consolo.log(sum(1,2,3,4,5,6,7,8,9,10))

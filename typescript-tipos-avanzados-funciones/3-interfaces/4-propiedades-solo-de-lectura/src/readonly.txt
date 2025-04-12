@@ -1,0 +1,21 @@
+READONLY:
+
+	- Son atributos de un objeto que solo pueden ser asignadas durante la creacion del mismo y no pueden ser cambiados despues.
+	- Esto asegura que el valorde la propiedad se mantenga costante y no pueda ser cambiado de forma accidental o intencional.
+
+class Persona {
+	readonly nombre: string;
+	readonly edad: number;
+	
+	constructor(nombre:string,edad:number) {
+		this.nombre = nombre;
+		this.edad = edad;
+	}
+	
+	saludar() {
+		console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} ano.`)
+	}
+}
+
+const persona = new Persona("Freddy", 35)
+persona.saludar();

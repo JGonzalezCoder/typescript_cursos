@@ -1,0 +1,35 @@
+PARAMETROS OPCIONALES:
+
+	Son aquellos que podemos obviar su envio cuando mandamos datos en una funcion que requiere argumentos.
+
+NULLISH-COALESCING:
+
+	Nos permite evaluar si una variable esta definida.
+
+PARAMETRO OPCIONALES EN TYPESCRIPT
+
+	- Para denotar que un parametro sera opcional usamos el operador "?".
+	
+	- Siempre debemos colocar parametros opcionales al final.
+
+const createProduct = (id: string | number, isNew: boolean, stock?: number) => {
+	return {
+		id,
+		stock,
+		isNew
+	}
+}
+
+console.log(createProduct(1,true))
+
+NULLISH-COALESCING PARA ASIGNAR VALORES POR DEFECTO
+
+	Se representa con el operador "??". Esto evalua si el primer valor esta definido, si no lo esta, retorna el segundo:
+	
+const createProduct = (id: string | number, isNew: boolean, stock?: number) => {
+	return {
+		id,
+		stock: stock ?? 10,
+		isNew: isNew ?? true
+	}
+}

@@ -1,0 +1,20 @@
+INTERFACES:
+
+	Nos permite crear moldes de objetos con sus respectivas propiedades y tipado.
+	
+interface Product {
+	id: number | string;
+	title: string;
+	price: number;
+	stock: number;
+}
+
+INTERFACES VS TYPE:
+
+	- type: se utiliza para definir tipos primitivos o directos.
+	
+	- interface: se utiliza para definir una estructura llave-valor de propiedades que describan lo que debe tener un objeto.
+	
+	- type: no es tan facil de extender
+	
+	- interface: se pueden facilmnte extender (realizar herencia). Esto lo hace mas escalables.

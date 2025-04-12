@@ -1,0 +1,49 @@
+NEVER
+
+	se usa para funciones que nunca van a terminar o que detienen el programa.
+
+FUNCIONES INFINITAS
+
+	const withoutEnd = () =>{
+		while(true){
+			console.log("Nunca parar de aprender");
+		}
+	}
+
+NEVER VS VOID
+
+	//Void
+	const voidFunc = () =>{
+		for(let i=1:i<=5;i++){
+			console.log(i);
+		}
+	}
+	voidFunc()
+	//Never
+	const neverFunc = () =>{
+		while(true){
+			console.log("Nunca parar de aprender");
+		}
+	}
+	neverFunc()
+
+ERRORES
+
+	const fail = (message: string) => {
+		throw new Error(message);
+	}
+	
+	const example = (input:unknown) =>{
+		if(typeof input === "string"){
+			return "Es un string";
+		}
+		else if(Array.isArray(input)){
+			return "Es un array"
+		}
+		return fail("Not Match")
+	}
+	
+	console.log(example("Hola"));
+	console.log(example([1,1,1,1]));
+	console.log(example(1212));
+	console.log(example("Hola despues del fail"));

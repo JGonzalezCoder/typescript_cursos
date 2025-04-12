@@ -4,7 +4,7 @@ Mediante la terminal ser[ia lo siguiente:
 	mkidir nombre-del-proyecto
 	cd nombre-del-proyecto
 
-Paso 2: Abrimos nuestro editor de c[odigo desde la ubicacion de la carpeta del proyecto.
+Paso 2: Abrimos nuestro editor de codigo desde la ubicacion de la carpeta del proyecto.
 
 	code.
 	
@@ -43,7 +43,7 @@ trim_trailing_whitespace = false
 Paso 4: necesitamos tener creado una carpeta de nombre src dentro de nuestro proyecto
 	
 Paso 5: Ahora crearemos nuestro archivo package.json
-	de manera simpledesde la terminal y dentro de la ruta del proyecto:
+	de manera simple desde la terminal y dentro de la ruta del proyecto:
 	
 	npm init -y
 	

@@ -1,0 +1,16 @@
+Tuples
+
+	Nos permiten crear un array fuertemente tipado especificado el tipo de dato de cada elemento, asi como una cantidad definida de elementos que podra almacenar.
+
+	let user: [string,number];
+	user = ["jesus"]; //Error
+	user = ["jesus", true] //Error
+	user = ["jesus"; 24]; //Correcto
+
+Desestructuracion
+
+	const user: [string,number] = ["jesus", 24];
+	const [username,age] = user;
+	console.log(userame);
+	
+	
